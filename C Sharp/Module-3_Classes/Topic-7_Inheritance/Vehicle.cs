@@ -8,6 +8,7 @@ namespace Topic_7_Inheritance
 {
     class Vehicle
     {
+        public int wheel = 4;
         private string brand = "Ford";
 
         protected void honk()

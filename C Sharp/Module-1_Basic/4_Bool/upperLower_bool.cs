@@ -6,13 +6,17 @@ namespace PrintInfo
     {
         public static void Main(string[] args)
         {
-            Console.Write("Write Name Upper Case : ");
-            string name = (Console.ReadLine()).ToUpper();
-            string lowerCaseName = name.ToLower();
+            Console.Write("Write Your Name : ");
+            string inputName = Console.ReadLine();
+            string name = (inputName ?? string.Empty); // Use empty string if null
+            //Console.WriteLine("Name :" + " " + name);
+            Console.WriteLine($"Name : {name}");
 
+            string upperCaseName = name.ToUpper();
             Console.Write("Upper Case Conversion : ");
-            Console.WriteLine(name);
+            Console.WriteLine(upperCaseName);
 
+            string lowerCaseName = name.ToLower();
             Console.Write("Lower Case Conversion : ");
             Console.WriteLine(lowerCaseName);
 
@@ -41,3 +45,4 @@ namespace PrintInfo
             Console.WriteLine(ffl);
         }
     }
+}

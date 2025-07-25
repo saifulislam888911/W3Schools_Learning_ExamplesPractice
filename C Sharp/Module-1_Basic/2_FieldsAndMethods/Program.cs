@@ -12,9 +12,12 @@ namespace MyApplication
      obj1.color = "Black";
      obj1.year = 2024;
      //<--! calling method -->
-     obj1.MyMethod1();     
-     //var obj1Speed1 = obj1.Speed1(); 
-	 Console.WriteLine(obj1.vechile + " " + obj1.model + " : " 
+     obj1.MyMethod1();
+     //obj1.Speed1();   //[it wont print anything]
+     //Console.WriteLine(obj1.Speed1());    //[it will print]
+     //var obj1Speed1 = obj1.Speed1();
+     //Console.WriteLine(obj1Speed1);    //[it will print]
+     Console.WriteLine(obj1.vechile + " " + obj1.model + " : " 
      + obj1.Speed1());
      
      

@@ -12,16 +12,17 @@ namespace Topic_7_Inheritance
         {
             Vehicle obj1 = new Vehicle();
             obj1.ClassName();
-            Console.WriteLine(obj1.brand);
-            obj1.honk();
+            // Console.WriteLine(obj1.brand); // Private 
+            // obj1.honk(); // Q : Protected is not working
 
             Console.WriteLine();
 
             Car obj2 = new Car();
             obj2.ClassName();
-            Console.WriteLine(obj2.brand);
-            Console.WriteLine(obj2.model);
-            obj2.honk();
+            // Console.WriteLine(obj2.brand);
+            Console.WriteLine(obj2.wheel); // Inherited Fields
+            Console.WriteLine(obj2.model); // Private 
+            //obj2.honk(); // Q : Protected is not working
         }
     }
 }
